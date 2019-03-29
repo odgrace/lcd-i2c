@@ -22,7 +22,7 @@ You should have received a copy of the GNU General Public License
 along with lcd_i2c.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-import smbus
+import smbus2 as smbus
 from time import sleep
 
 class lcd_i2c:
@@ -163,4 +163,4 @@ class lcd_i2c:
 
 if __name__ == "__main__":
     lcd = lcd_i2c()
-    lcd.print_str("test", 1)
+    lcd.print_str("The Quick Brown Fox Jumped Over the lazy dog", 1)

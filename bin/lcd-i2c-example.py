@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-lcd-i2c-example
+lcd-i2c-example.py
 This program is part of lcd_i2c
 
 Copyright (c) 2016, 2017 MrTijn/Tijndagamer
@@ -22,7 +22,7 @@ along with lcd_i2c.  If not, see <http://www.gnu.org/licenses/>.
 from lcd_i2c import lcd_i2c
 from time import sleep
 
-addr = raw_input("Address = ")
+addr = input("Address = ")
 
 lcd = lcd_i2c(int(addr))
 lcd.print_str("test", 1)

@@ -90,3 +90,6 @@ ENV/
 
 /dist/
 /*.egg-info
+
+# pycharm rubbish
+.idea/*
